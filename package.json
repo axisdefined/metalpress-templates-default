@@ -1,0 +1,10 @@
+{
+  "name": "metalpress-templates-default",
+  "version": "1.0.0",
+  "description": "Default metalpress templates.",
+  "main": "",
+  "scripts": {
+    "test": ""
+  },
+  "license": "MIT"
+}

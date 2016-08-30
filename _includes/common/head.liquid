@@ -1,0 +1,48 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
+
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  {% if site.meta.keywords %}
+  <meta name="keywords" content="{{ site.meta.keywords | join: ', ' }}">
+  {% endif %}
+  
+  <meta name="google-site-verification" content="{{ site.google_verify }}">
+
+  {% include meta/twitter %}
+  {% include meta/facebook %}
+  
+  <link rel="canonical" href="{{ site.url }}">
+
+  <!-- <link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed"> -->
+  {% if site.owner.google_plus %}
+  <link rel="author" href="{{ site.owner.google_plus }}?rel=author"> 
+  {% endif %}
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <!-- For all browsers -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/{{ fingerprint | get: 'assets/css/main.css' }}">
+  <meta http-equiv="cleartype" content="on">
+  
+  <!-- Icons -->
+  <!-- 16x16 -->
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <!-- 32x32 -->
+  <link rel="shortcut icon" href="/assets/img/favicon.png">
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="/assets/img/apple-touch-icon-precomposed.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/apple-touch-icon-72x72-precomposed.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/apple-touch-icon-114x114-precomposed.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/apple-touch-icon-144x144-precomposed.png">
+
+</head>

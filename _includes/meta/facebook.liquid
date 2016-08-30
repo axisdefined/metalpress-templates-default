@@ -1,0 +1,24 @@
+{% if site.meta.facebook %}
+  
+  {% if title and image %}
+    {% assign og_title = title | append: ' &ndash; ' | append: site.meta.facebook.title %}
+    {% assign og_description = excerpt %}
+    {% assign og_url = path | prepend: '/' | prepend: site.url %}
+    {% assign og_img = image | prepend: '/assets/img/' | prepend: site.url %}
+  {% else %}
+    {% assign og_title = site.meta.facebook.title %}
+    {% assign og_description = site.meta.facebook.description %}
+    {% assign og_url = site.meta.facebook.url %}
+    {% assign og_img = site.meta.facebook.img %}
+  {% endif %}
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="{{ site.meta.facebook.title }}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ og_title }}">
+  <meta property="og:description" content="{{ og_description }}">
+  <meta property="og:url" content="{{ og_url }}">
+  <meta property="og:image" content="{{ og_img }}">
+
+{% endif %}

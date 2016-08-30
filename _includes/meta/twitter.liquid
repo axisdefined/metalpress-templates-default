@@ -1,0 +1,27 @@
+{% if site.meta.twitter %}
+
+  {% if title and image %}
+    {% assign twttr_title = title | append: ' &ndash; ' | append: site.meta.facebook.title %}
+    {% assign twttr_description = excerpt %}
+    {% assign twttr_url = path | prepend: '/' | prepend: site.url %}
+    {% assign twttr_img = image | prepend: '/assets/img/' | prepend: site.url %}
+  {% else %}
+    {% assign twttr_title = site.meta.twitter.title %}
+    {% assign twttr_description = site.meta.twitter.description %}
+    {% assign twttr_url = site.meta.twitter.url %}
+    {% assign twttr_img = site.meta.twitter.img %}
+  {% endif %}
+
+  <!-- Twitter Cards -->
+  {% if image.feature %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ twttr_img }}">
+  {% else %}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="{{ twttr_img }}">
+  {% endif %}
+    <meta name="twitter:title" content="{{ twttr_title }}">
+    <meta name="twitter:description" content="{{ twttr_description }}">
+    <meta name="twitter:creator" content="@{{ site.meta.twitter.handle }}">
+
+{% endif %}
