@@ -1,0 +1,22 @@
+{
+  "basePath": ".",
+  "filedata": {
+    "default": "data/theme.yaml"
+  },
+  "bower": true,
+  "jquery": true,
+  "collections": {
+    "default-theme": {
+      "pattern": "pages/*.html"
+    }
+  },
+  "permalinks": {
+    "relative": false,
+    "linksets": [
+      { 
+        "match": { "collection": "default-theme" },
+        "pattern": ":title"
+      }
+    ]
+  }
+}

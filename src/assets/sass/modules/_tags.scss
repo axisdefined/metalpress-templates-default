@@ -1,0 +1,25 @@
+.tags {
+    text-align: center;
+}
+.tag {
+    padding: 2em;
+    background-color: #eee;
+    margin: 1em;
+    display: inline-block;
+    max-width: 300px;
+    vertical-align: top;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}
+.tag__heading {
+    margin-top: 0;
+    text-align: center;
+}
+.tag__article-list {
+    .entry-title {
+        margin: 1em 0;
+    }
+}

@@ -1,0 +1,68 @@
+//
+// Variables
+// --------------------------------------------------
+// Global values
+// --------------------------------------------------
+@import "assets";
+@import "colors";
+@import "typography";
+@import "iconography";
+
+@import "components";
+@import "tables";
+@import "buttons";
+@import "forms";
+@import "z-index";
+@import "media-queries";
+@import "grid-system";
+@import "navbar";
+@import "navs";
+
+// Pager
+// -------------------------
+$pager-border-radius:                  15px !default;
+
+// Jumbotron
+// -------------------------
+$jumbotron-padding:              30px !default;
+$jumbotron-font-size:            ceil($font-size-base * 1.5) !default;
+
+// Tooltips
+// -------------------------
+$tooltip-max-width:           200px !default;
+$tooltip-arrow-width:         5px !default;
+
+// Panels
+$panel-border-radius:         $border-radius-base !default;
+
+@import "popovers";
+@import "modals";
+@import "alerts";
+@import "thumbnails";
+
+// Badges
+// -------------------------
+$badge-font-weight:           bold !default;
+$badge-line-height:           1 !default;
+$badge-border-radius:         10px !default;
+
+// List-groups
+// ------------------------
+$list-group-border-radius:    $border-radius-base !default;
+
+@import "carousels";
+
+// Close
+// ------------------------
+$close-font-weight:           bold !default;
+$close-text-shadow:           0 1px 0 #fff !default;
+
+// Code
+// ------------------------
+$pre-scrollable-max-height:   340px !default;
+
+// Miscellaneous
+// -------------------------
+// Horizontal forms & lists
+$component-offset-horizontal: 180px !default;
+

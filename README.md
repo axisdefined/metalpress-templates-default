@@ -1,6 +1,16 @@
-# metalpress-templates-default
+# metalpress-theme-default
 
-> Default templates for Metalpress
+> Default Metalpress theme.
+
+## Pages
+
+### Home
+
+### About
+
+### Contact
+
+## Templates
 
 ### _includes
 

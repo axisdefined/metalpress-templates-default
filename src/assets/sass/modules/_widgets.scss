@@ -1,0 +1,26 @@
+.consultation-inline {
+  padding: 10rem 0;
+  text-align: center;
+  background-color: #fff;
+  .btn {
+    font-weight: 600;
+  }
+}
+
+.mc-results {
+  padding-top: 1.4rem;
+  font-weight: 600;
+  position: absolute;
+}
+
+.mc-email {
+  &.error {
+    color: rgba(255, 0, 0, 0.65);
+    > a {
+      color: rgba(255, 0, 0, 0.65);
+    }
+  }
+}
+.mc-results--relative {
+  position: relative;
+}

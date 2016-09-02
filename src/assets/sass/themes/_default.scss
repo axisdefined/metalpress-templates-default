@@ -1,0 +1,58 @@
+.bg--gradient {
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(60, 60, 60, 0.3), rgba(0, 0, 0, 0.4));
+  }
+}
+
+.bg--gradient-bold {
+  border-top: 4px solid #30BB9A;
+  background: linear-gradient(5deg, #575A5F, #191919);
+}
+
+
+.bg--home {
+  background-image: url($banner-bg-url-2);
+  background-size: cover;
+  background-position: 0px 0px;
+}
+
+.bg--facebook {
+  background-image: url($banner-bg-facebook);
+  background-size: cover;
+  background-position: 0px 0px;
+  color: #fff;
+}
+
+.bg--minimal {
+  background-image: url($banner-bg-url-2);
+  background-size: cover;
+}
+
+.intro:hover {
+  .box {
+    transform: translateX(10%);
+    background: rgba(51, 51, 51, 0.3);
+  }
+  .box-2 {
+    transform: translateX(10%);
+  }
+}
+
+.box {
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: -20%;
+  width: 600px;
+  height: 80px;
+  background: rgba(51, 51, 51, 0);
+  z-index: 0;
+  transition: all 0.3s ease-in-out;
+}

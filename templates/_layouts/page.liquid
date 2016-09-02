@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  {% include common/head %}
+
+  <body>
+      
+      <main class="page-wrap">
+        
+        {% include common/navbar %}
+        {% comment %}{% include browser-upgrade %}{% endcomment %}
+        
+        <section class="section">
+          <div class="container">
+            <div class="col-md-12">
+              {{ contents }}
+            </div>
+          </div>
+        </section>
+
+        {% include common/footer %}
+        
+      </main>
+
+      {% include common/scripts %}
+
+  </body>
+
+</html>

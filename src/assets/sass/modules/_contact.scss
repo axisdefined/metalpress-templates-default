@@ -1,0 +1,54 @@
+@keyframes bringIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.contact {
+  margin: 0 auto;
+}
+
+.contact__heading {
+  color: #000;
+  font-weight: 600;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact__header {
+  color: $gray-light;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.contact__content {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  .social-media > li {
+    padding: 0 2rem 0 0;
+  }
+}
+
+.bio-background {
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  margin-top: -100px;
+  background-position: 0px -160px;
+}
+
+.project__assesment {
+  background: #eee;
+}
+
+.project-assessment__content {
+  padding: 1.6rem;
+  text-align: center;
+}
