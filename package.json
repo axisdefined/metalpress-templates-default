@@ -1,6 +1,6 @@
 {
   "name": "metalpress-theme-default",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Default metalpress theme.",
   "main": "",
   "babel": {
@@ -10,12 +10,15 @@
     ]
   },
   "scripts": {
-    "test": ""
+    "start": "metalpress serve"
   },
   "license": "MIT",
   "devDependencies": {
     "babel-loader": "6.2.5",
     "babel-preset-es2015": "6.14.0",
     "babel-preset-stage-0": "6.5.0"
+  },
+  "dependencies": {
+    "metalpress": "0.6.6"
   }
 }
